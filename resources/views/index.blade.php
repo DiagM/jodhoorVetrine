@@ -542,6 +542,7 @@ font-size: 50px;
         <div class="logo">
             <a href="#contact" >
             <img src="{{asset('assets/logos/Jodhoor White.png')}}" alt="Jodhoor Logo" style="height:105%;">
+
         </a>
         </div>
 
@@ -566,9 +567,15 @@ font-size: 50px;
                         {{ __('TH7') }}
                         <button class="image-button" >
                             <a href="#contact">
-                                <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                <img src="{{asset('assets/images/contact-orange.webp')}}" alt="contact logo">
+
                             </a>
+
                         </button>
+
+                        <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+
                     </p>
                         <ul class="ul" id="brandCreationList"></ul>
 
@@ -587,6 +594,8 @@ font-size: 50px;
                                             <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                         </a>
                                     </button>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                                 </p>
 
                                 <ul class="ul" id="brandStrategyList"></ul>
@@ -605,11 +614,13 @@ font-size: 50px;
                                             <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                         </a>
                                     </button>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                                 </p>
 
                                 <ul class="ul" id="brandActivationList"></ul>
                               </div>
-                            <h1>{{ __('TH42') }}<button class="add-button plus-button" data-section="brandExperiencePlus" onclick="showDetail('brandExperience',this)">+</button>
+                            <h1>{{ __('TH42') }} <button class="add-button plus-button" data-section="brandExperiencePlus" onclick="showDetail('brandExperience',this)">+</button>
                             <button class="add-button minus-button" data-section="brandExperienceMinus" onclick="hideDetail(this, 'brandExperience')" style="display: none;">-</button></h1>
                             <div id="brandExperience" class="detail-page" hidden>
                                 <p>
@@ -624,6 +635,8 @@ font-size: 50px;
                                             <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                         </a>
                                     </button>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                                 </p>
 
                                 <ul class="ul" id="brandExperienceList"></ul>
@@ -637,200 +650,210 @@ font-size: 50px;
 
         </div>
     <div class="brand-plus full-brand bp2">
-        <h1>CONCEPT & INNOVATION<button class="add-button" onclick="toggleVisibility('bp2', 'bpp2')">+</button></h1>
+        <h1>{{ __('TH56') }}<button class="add-button" onclick="toggleVisibility('bp2', 'bpp2')">+</button></h1>
 
     </div>
     <div class="brand-plus-plus bpp2">
         <div class="container">
             <div class="row">
 
-                    <h1 >CONCEPT & INNOVATION <button class="add-button minus-button-full"  onclick="hideBrand('bp2', 'bpp2')" >-</button></h1>
+                    <h1>{{ __('TH56') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp2', 'bpp2')" >-</button></h1>
                     <div class="col-md-6">
                         <p style="color:#302743">
-                            Nous pensons que la nature n'est insignifiante jusqu'à ce qu'en celle-ci est <br>
-                            vu le problème, ainsi nous composons des éléments de notre univers les <br>
-                            concepts de demain. Nous récoltons en continu les données et les <br>
-                            transformons en informations grâce à une série de comparaison <br>
-                            appartenant à notre système JODHOOR. <br>
-                            Nous reposant sur le zéro mépris, nous positionnons l'action à l'instant <br>
-                            infinitisimal petit (ξ) là où la dualité transite, dès lors chaque produit que <br>
-                            nous construisons est l'ouverture d'un marché ou l'action de ce dernier. <br>
+                            {{ __('TH57') }}<br>
+                            {{ __('TH58') }}<br>
+                            {{ __('TH59') }}<br>
+                            {{ __('TH60') }}<br>
+                            {{ __('TH61') }}<br>
+                            {{ __('TH62') }}<br>
+                            {{ __('TH63') }}<br>
+                            {{ __('TH64') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
                                     <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                 </a>
                             </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                         </p>
                 </div>
                 <div class="col-md-6">
                     <ul class="ul-full">
-                        <li>->Product Conceptualisation</li>
-                        <li>->Analyse et amélioration des performances</li>
-                        <li>->Coordination des tâches multidisciplinaires</li>
-                        <li>->Conception et modélisation de produits</li>
-                        <li>->Recherche de problèmes et determination de la problématique mère</li>
-                        <li>->Activation du co-branding et de la globalisation de l'action</li>
+                        <li>->{{ __('TH65') }}</li>
+                        <li>->{{ __('TH66') }}</li>
+                        <li>->{{ __('TH67') }}</li>
+                        <li>->{{ __('TH68') }}</li>
+                        <li>->{{ __('TH69') }}</li>
+                        <li>->{{ __('TH70') }}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="brand-plus right-brand bp3">
-        <h1>DESIGN<button class="add-button" onclick="toggleVisibility('bp3', 'bpp3')">+</button></h1>
+        <h1>{{ __('TH71') }}<button class="add-button" onclick="toggleVisibility('bp3', 'bpp3')">+</button></h1>
 
     </div>
     <div class="brand-plus-plus bpp3">
         <div class="container">
             <div class="row">
 
-                    <h1 >Design <button class="add-button minus-button-full"  onclick="hideBrand('bp3', 'bpp3')" >-</button></h1>
+                    <h1>{{ __('TH71') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp3', 'bpp3')" >-</button></h1>
                     <div class="col-md-6">
                         <p style="color:#302743">
-                            De la pensée au stylet en passant par le crayon nous développons des <br>
-                            designs personnalisés selon l'image propre à votre mieux et bien au delà <br>
-                            du visuel c'est dans l'activation des sens que nous agissons en dotant <br>
-                            l'entreprise de l'ambiance qui sied à son esprit et à ses principes. <br>
-                            Notre accompagnement vise à équilibrer l'attitude de la marque et le <br>
-                            marché dans lequel elle exerce en usant des différents outils de <br>
-                            communication pour la meilleure experience de marque. <br>
+                            {{ __('TH72') }}<br>
+                            {{ __('TH73') }}<br>
+                            {{ __('TH74') }} <br>
+                            {{ __('TH75') }} <br>
+                            {{ __('TH76') }}<br>
+                            {{ __('TH77') }}  <br>
+                            {{ __('TH78') }} <br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
                                     <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                 </a>
                             </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                         </p>
                 </div>
                 <div class="col-md-6">
                     <ul class="ul-full">
-                        <li>->Brand Identity System (CI/VI)</li>
-                        <li>->Reconstruction graphique</li>
-                        <li>->Rebranding de marque</li>
-                        <li>->Charte graphique/digitale</li>
-                        <li>->Charte graphique globale</li>
-                        <li>->Storyboard</li>
-                        <li>->Campagne de marketing 360</li>
-                        <li>->3D modeling</li>
-                        <li>->Digital sculpting/painting</li>
-                        <li>->UX/UI</li>
-                        <li>->Composition de son propre à la marque</li>
-                        <li>->Spot video</li>
+                        <li>->{{ __('TH79') }}</li>
+                        <li>->{{ __('TH80') }}</li>
+                        <li>->{{ __('TH81') }}</li>
+                        <li>->{{ __('TH82') }}</li>
+                        <li>->{{ __('TH83') }}</li>
+                        <li>->{{ __('TH84') }}</li>
+                        <li>->{{ __('TH85') }}</li>
+                        <li>->{{ __('TH86') }}</li>
+                        <li>->{{ __('TH87') }}</li>
+                        <li>->{{ __('TH88') }}</li>
+                        <li>->{{ __('TH89') }}</li>
+                        <li>->{{ __('TH90') }}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="brand-plus full-brand bp4">
-        <h1>SUSTAINABLE MARKETING<button class="add-button" onclick="toggleVisibility('bp4', 'bpp4')">+</button></h1>
+        <h1>{{ __('TH91') }}<button class="add-button" onclick="toggleVisibility('bp4', 'bpp4')">+</button></h1>
 
     </div>
     <div class="brand-plus-plus bpp4">
         <div class="container">
             <div class="row">
 
-                    <h1 >SUSTAINABLE MARKETING<button class="add-button minus-button-full"  onclick="hideBrand('bp4', 'bpp4')" >-</button></h1>
+                    <h1 >{{ __('TH91') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp4', 'bpp4')" >-</button></h1>
                     <div class="col-md-6">
                         <p style="color:#302743">
-                            C'est à notre image que nous créons nos entreprises dont les actions <br>
-                            définissent nos priorités et la compétition réelle à laquelle nous <br>
-                            choisissons de participer. Ce monde a préservé pour nous assez de ruines <br>
-                            pour nous montrer la faille, il communique assez et par instinct il ne dit  <br>
-                            que vrais. Si c'est de lui que nous puisons tout ce que nous produisons <br>
-                            alors la création d'une suite n'est pas seulement indisponsable mais vitale <br>
-                            tout autant pour nous que pour l'entité que nous gouvernons. <br>
+                            {{ __('TH92') }}<br>
+                            {{ __('TH93') }}<br>
+                            {{ __('TH94') }}<br>
+                            {{ __('TH95') }}<br>
+                            {{ __('TH96') }}<br>
+                            {{ __('TH97') }}<br>
+                            {{ __('TH98') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
                                     <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                 </a>
                             </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                         </p>
                 </div>
                 <div class="col-md-6">
                     <ul class="ul-full">
-                        <li>->Gestion de crise et du changement</li>
-                        <li>->Stratégie ISO</li>
-                        <li>->Culture de l'entreprise centrée sur le marketing durable</li>
-                        <li>->Intégration de l'ISO 26000 à l'action de la marque</li>
-                        <li>->Recherche marketing et innovation</li>
-                        <li>->immersion de la marque dans la société</li>
-                        <li>->Définition du but de l'organisation</li>
+                        <li>->{{ __('TH99') }}</li>
+                        <li>->{{ __('TH100') }}</li>
+                        <li>->{{ __('TH101') }}</li>
+                        <li>->{{ __('TH102') }}</li>
+                        <li>->{{ __('TH103') }}</li>
+                        <li>->{{ __('TH104') }}</li>
+                        <li>->{{ __('TH105') }}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="brand-plus bp5">
-        <h1>PR<button class="add-button" onclick="toggleVisibility('bp5', 'bpp5')">+</button></h1>
+        <h1>{{ __('TH106') }}<button class="add-button" onclick="toggleVisibility('bp5', 'bpp5')">+</button></h1>
 
     </div>
     <div class="brand-plus-plus bpp5">
         <div class="container">
             <div class="row">
-                <h1 >PUBLIC RELATIONSHIP<button class="add-button minus-button-full"  onclick="hideBrand('bp5', 'bpp5')" >-</button></h1>
+                <h1>{{ __('TH107') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp5', 'bpp5')" >-</button></h1>
                 <div class="col-md-6">
 
 
                         <p style="color:#302743">
-                            Parmi les piliers de notre processus de communication stratégique fiable <br>
-                            est la construction de liens robustes entre l'organisation et son public avec <br>
-                            un effet escillatoire entre le marketing et le PR à des rythmes calculés pour <br>
-                            augmenter des performences de la marque. <br>
+                            {{ __('TH108') }}<br>
+                            {{ __('TH109') }}<br>
+                            {{ __('TH110') }}<br>
+                            {{ __('TH111') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
                                     <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                 </a>
                             </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                         </p>
                 </div>
                 <div class="col-md-6">
                     <ul class="ul-full">
-                        <li>->Evaluation des médias potentiels</li>
-                        <li>->Rédaction des articles presse multilingues</li>
-                        <li>->Définition de l'audience</li>
-                        <li>->Reputation Management</li>
-                        <li>->pre-and-post campaign research</li>
-                        <li>->Relations gouvernementales</li>
-                        <li>->Communication de crise</li>
-                        <li>->PR & Marketing overlap/intertwine</li>
-                        <li>->Internationalisation du message de l'organisation</li>
+                        <li>->{{ __('TH112') }}</li>
+                        <li>->{{ __('TH113') }}</li>
+                        <li>->{{ __('TH114') }}</li>
+                        <li>->{{ __('TH115') }}</li>
+                        <li>->{{ __('TH116') }}</li>
+                        <li>->{{ __('TH117') }}</li>
+                        <li>->{{ __('TH118') }}</li>
+                        <li>->{{ __('TH119') }}</li>
+                        <li>->{{ __('TH120') }}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="brand-plus full-brand bp6">
-        <h1>BUSINESS GLOBALISATION<button class="add-button" onclick="toggleVisibility('bp6', 'bpp6')">+</button></h1>
+        <h1>{{ __('TH121') }}<button class="add-button" onclick="toggleVisibility('bp6', 'bpp6')">+</button></h1>
 
     </div>
     <div class="brand-plus-plus bpp6">
         <div class="container">
             <div class="row">
 
-                    <h1 >BUSINESS GLOBALISATION<button class="add-button minus-button-full"  onclick="hideBrand('bp6', 'bpp6')" >-</button></h1>
+                    <h1 >{{ __('TH121') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp6', 'bpp6')" >-</button></h1>
                     <div class="col-md-6">
                         <p style="color:#302743">
-                            Le facteur Place peut être un vecteur de transformation majeur de  <br>
-                            l'organisation avec l'accumulation de plusieurs paramètres adjascents au <br>
-                            sein de marchés fortement potentiels qui grâce à notre expérience en <br>
-                            supplychain et en internationalisation des entreprises vous n'aurez plus à <br>
-                            laisser passer. <br> <br>
-                            Laissez votre marque profiter de la diversité et de l'immensité de l'univers <br>
-                            tout en augmentant vos performences. <br>
+                            {{ __('TH122') }}<br>
+                            {{ __('TH123') }}<br>
+                            {{ __('TH124') }}<br>
+                            {{ __('TH125') }}<br>
+                            {{ __('TH126') }}<br> <br>
+                            {{ __('TH127') }}<br>
+                            {{ __('TH128') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
                                     <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
                                 </a>
                             </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
                         </p>
                 </div>
                 <div class="col-md-6">
                     <ul class="ul-full">
-                        <li>->Supplychain management</li>
-                        <li>->Logistique et optimisation du transport</li>
-                        <li>->Campagne marketing universelle</li>
-                        <li>->Standardisation de la communication</li>
-                        <li>->Etude de marché internationale</li>
-                        <li>->Négociations internationales</li>
-                        <li>->Implantation d'entreprise</li>
+                        <li>->{{ __('TH129') }}</li>
+                        <li>->{{ __('TH130') }}</li>
+                        <li>->{{ __('TH131') }}</li>
+                        <li>->{{ __('TH132') }}</li>
+                        <li>->{{ __('TH133') }}</li>
+                        <li>->{{ __('TH134') }}</li>
+                        <li>->{{ __('TH135') }}</li>
                     </ul>
                 </div>
             </div>
@@ -845,7 +868,7 @@ font-size: 50px;
                     @csrf
                     <div class="form-group">
 
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Nom / prénom" required>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="{{ __('TH136') }}" required>
                     </div>
                     <div class="form-group">
 
@@ -854,12 +877,12 @@ font-size: 50px;
                     </div>
                     <div class="form-group">
 
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Numéro de téléphone" required>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="{{ __('TH137') }}" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" class="form-control" id="message" placeholder="écrire..." required></textarea>
+                        <textarea name="message" class="form-control" id="message" placeholder="..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-primary">{{ __('TH138') }}</button>
                 </form>
             </div>
             <div class="col-md-6">
@@ -1016,7 +1039,7 @@ function showDetail(sectionId,clickedButton) {
                 brandExperienceList.innerHTML ="";
                 brandExperienceList.innerHTML = "<li>->{{ __('TH49') }}</li><li>->{{ __('TH50') }}</li><li>->{{ __('TH51') }}</li><li>->{{ __('TH52') }}</li><li>->{{ __('TH53') }}</li><li>->{{ __('TH54') }}</li><li>{{ __('TH55') }}</li>";
                 // Dynamically adjust the margin-top for alignment
-                brandExperienceList.style.marginTop = '410px'; // Adjust as needed
+                brandExperienceList.style.marginTop = '290px'; // Adjust as needed
         }
 
             }

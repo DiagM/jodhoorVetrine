@@ -56,7 +56,7 @@
         }
 
         .text-4xl {
-            font-size: 5rem; /* Increased font size to 3rem */
+            font-size: 4rem; /* Increased font size to 3rem */
         }
         .text-3xl {
             font-size: 3rem; /* Increased font size to 3rem */
@@ -111,14 +111,14 @@
 </head>
 <body>
     <div class="min-h-screen flex flex-col">
-        <div class="bg-cover bg-center h-screen" style="background-image: url('{{ asset('assets/images/metamedBG/image-01.svg') }}');"></div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-02.svg') }}');">
+        <div class="bg-cover bg-center h-screen" style="background-image: url('{{ asset('assets/images/metamedBG/image-01.webp') }}');"></div>
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-02.webp') }}');">
             <div class="w-1/2 ml-20">
                 <h2 class="text-4xl font-bold mb-4 text-white">Situation Actuelle De <br> La Santé Mondiale</h2>
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-03.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-03.webp') }}');">
             <div class="w-1/2 ml-20">
                 <p class="text-lg mb-8 text-white">
                     Un Univers Social Ouvrant Libre Droit A La Recherche mMédicale En Reliant Les Cas Et Accélérant L'étude De <br>
@@ -136,7 +136,7 @@
         </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-04.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-04.webp') }}');">
             <div class="w-1/2 ml-20 lower-text line-container"> <!-- Add line-container class -->
                 <p class="text-lg mb-8 text-white">
                     Chacun a droit à un compte unique propre à son ID par lequel il a accès à des recherches des <br>
@@ -146,7 +146,7 @@
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-05.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-05.webp') }}');">
             <div class="w-1/2 ml-20">
                 <h3 class="text-3xl font-bold mb-4 text-white">Par statut professionnel les <br> accès seront personnalisés:</h3>
                 <p class="text-lg mb-8 text-white">
@@ -166,10 +166,10 @@
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-06.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-06.webp') }}');">
 
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-07.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-07.webp') }}');">
             <div class="w-1/2 ml-20 text-top">
                 <div class="w-1/2 ml-20 line-container"> <!-- Add line-container class -->
                     <h3 class=".font-bold text-white">
@@ -182,7 +182,7 @@
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-08.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-08.webp') }}');">
             <div class="w-1/2 ml-20  line-container"> <!-- Add line-container class -->
                 <p class="text-lg mb-8 text-white">
                     Une gestion efficace des dossiers médicaux sans risque de répétition ou de <br>
@@ -192,10 +192,10 @@
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-09.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-09.webp') }}');">
 
         </div>
-        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-10.svg') }}');">
+        <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-10.webp') }}');">
             <h2 class="text-4xl font-bold text-center-top text-white">Objectifs Metamed +10ans</h2>
 
         </div>
