@@ -1,0 +1,101 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+/* Add styles for sidebar header */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .logomini img {
+    max-width: 60px;
+    height: auto;
+  }
+
+  .close-button .close-icon {
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: #000000;
+    cursor: pointer;
+    height: auto;
+    max-width: 60px;
+  }
+
+  .close-button .close-icon:hover {
+    color: #f06292;
+  }
+
+
+  /* Add styles for sidebar content */
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #f06292;
+  }
+
+
+  /* Add styles for sidebar footer */
+  .sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+
+  /* Override the default icon color */
+  .social-icon i {
+    color: #ED6C4E;
+  }
+
+  .social-icon i:hover {
+    color: white;
+  }
