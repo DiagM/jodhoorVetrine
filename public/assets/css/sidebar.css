@@ -1,4 +1,70 @@
-.sidebar {
+/* modification */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Set the desired text color */
+  }
+
+  .navbar-brand img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add some spacing between the logo and text */
+  }
+
+  .custom-button {
+    background-color: white;
+    color: #ED6C4E; /* Initial text color */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .custom-button:hover {
+    background-color: #ED6C4E; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+
+  /* styles.css */
+  .custom-navbar {
+    position: fixed; /* Set navbar to fixed position */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: transparent;
+      padding: 10px;
+      box-shadow: transparent;
+      z-index: 1000; /* Ensure the navbar stays on top of other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+  }
+  .hamburger-icon {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #ED6C4E; /* Set the color of the hamburger icon */
+    font-size: 24px;
+  }
+
+  .logo img {
+    max-width: 50px; /* Ajuster la largeur du logo */
+    height: auto;
+  }
+
+
+
+  .bar {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+  }
+
+  .sidebar {
     position: fixed;
     top: 0;
     right: -300px;
@@ -10,8 +76,9 @@
     z-index: 1000;
   }
 
-/* Add styles for sidebar header */
-.sidebar-header {
+
+  /* Add styles for sidebar header */
+  .sidebar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +87,7 @@
     border-bottom: 1px solid #ccc;
   }
 
-  .logomini img {
+  .logo img {
     max-width: 60px;
     height: auto;
   }
@@ -28,11 +95,9 @@
   .close-button .close-icon {
     background: none;
     border: none;
-    font-size: 50px;
-    color: #000000;
+    font-size: 24px;
+    color: #333;
     cursor: pointer;
-    height: auto;
-    max-width: 60px;
   }
 
   .close-button .close-icon:hover {
@@ -47,6 +112,10 @@
     align-items: center;
     padding: 20px;
   }
+  .logomini img {
+      max-width: 60px;
+      height: auto;
+    }
 
   .navbar-nav {
     list-style: none;
@@ -69,7 +138,6 @@
   .nav-link:hover {
     color: #f06292;
   }
-
 
   /* Add styles for sidebar footer */
   .sidebar-footer {
@@ -98,4 +166,29 @@
 
   .social-icon i:hover {
     color: white;
+  }
+
+
+  .project-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #ED6C4E;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s;
+  }
+
+  .project-button:hover {
+    background-color: #ED6C4E;
+    color: white;
+  }
+
+  /* Styles pour la séparation */
+  .separator {
+    width: 1px;
+    height: 24px; /* Hauteur de la séparation */
+    color: orange;
+    margin: 0 10px; /* Espace à gauche et à droite */
   }

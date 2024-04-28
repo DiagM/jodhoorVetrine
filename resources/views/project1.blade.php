@@ -120,8 +120,8 @@
                     <span>Metamed</span>
                 </a>
                 <div class="box">
-                    <img src="{{asset('assets/images/pexels-farhan-ishraq-rudra-375751.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" >
-                    <span>Image</span>
+                    <img src="{{asset('assets/images/project/display-xi.webp')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" >
+                    <span>Xi</span>
                 </div>
                 <div class="box">
                     <img src="{{asset('assets/images/12.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" >

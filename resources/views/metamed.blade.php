@@ -76,7 +76,7 @@
         }
 
         .mb-8 {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         /* Set text color to white */
@@ -86,7 +86,7 @@
 
         /* Add margin to the top of the paragraph */
         .lower-text {
-            margin-top: 30rem; /* Adjust as needed */
+            margin-top: 32rem; /* Adjust as needed */
         }
 
 
@@ -107,9 +107,100 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .invest-button {
+
+        text-align: center; /* Centre le bouton horizontalement */
+        }
+
+    .invest-button .button {
+        font-weight: bold; /* Met le texte en gras */
+        padding: 10px 20px; /* Ajuste les marges intérieures pour une apparence agréable */
+        background-color: transparent; /* Change la couleur de fond du bouton */
+        color: #fff; /* Change la couleur du texte du bouton */
+        border: none; /* Supprime la bordure */
+        border-radius: 5px; /* Arrondi les coins */
+        text-decoration: none; /* Supprime la soulignement du lien */
+    }
+
+.invest-button .button:hover {
+    background-color: #0056b3; /* Change la couleur de fond du bouton au survol */
+}
+
+        @media only screen and (max-width:600px) {
+    .h-screen {
+        height: 30vh; /* Set height to 30% of viewport height */
+
+    }
+    .text-4xl {
+            font-size: 1.2rem; /* Increased font size to 3rem */
+        }
+        .text-3xl {
+            font-size: 1rem; /* Increased font size to 3rem */
+        }
+        .text-lg {
+            font-size: 0.3rem;
+            font-weight: bold;
+
+        }
+        .lower-text {
+            margin-top: 10rem; /* Adjust as needed */
+        }
+        .line-container {
+
+            padding-left: 3px; /* Add space for the vertical line */
+        }
+        .ml-20 {
+            margin-left: 1rem; /* You can adjust this value */
+        }
+        .text-crm{
+            font-size: 0.6rem;
+        }
+        .invest-button .button {
+
+        padding: 5px 5px; /* Ajuste les marges intérieures pour une apparence agréable */
+
+    }
+        .invest-button {
+        font-size: 0.4rem;
+
+        }
+        .mb-8 {
+            margin-bottom: 0rem;
+        }
+}
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .h-screen {
+        height: 30vh; /* Set height to 30% of viewport height */
+    }
+    .text-4xl {
+            font-size: 2rem; /* Increased font size to 3rem */
+        }
+        .text-lg {
+            font-size: 0.55rem;
+            font-weight: bold;
+        }
+        .text-3xl {
+            font-size: 2rem; /* Increased font size to 3rem */
+        }
+        .ml-20 {
+            margin-left: 1rem; /* You can adjust this value */
+        }
+        .line-container {
+
+        padding-left: 3px; /* Add space for the vertical line */
+        }
+        .text-crm{
+            font-size: 1rem;
+        }
+
+}
+
     </style>
 </head>
 <body>
+    @include('partials/navbar_sidebar')
+
     <div class="min-h-screen flex flex-col">
         <div class="bg-cover bg-center h-screen" style="background-image: url('{{ asset('assets/images/metamedBG/image-01.webp') }}');"></div>
         <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-02.webp') }}');">
@@ -130,9 +221,15 @@
                     Naissance à De Nouvelles Questions Scientifiques Qui Par La Diversité Trouveront De Nouvelles Solutions <br>
                     Thérapeutiques.
                 </p>
+                <div class="invest-button">
+                    <a href="#contact" class="button">Investir sur ce projet</a>
+                </div>
                 <div class="logomini">
-                <img src="{{asset('assets/logos/Jodhoor-White.svg')}}" alt="Judhoor white Logo">
-            </div>
+                        <a href="{{ route('index') }}">
+                            <img src="{{asset('assets/logos/Jodhoor-White.svg')}}" alt="Judhoor white Logo">
+                        </a>
+
+                </div>
         </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
@@ -143,6 +240,9 @@
                     discussions universelles, lecture de recherches, accès direct à son dossier medical, appel <br>
                     d'urgence centralisé
                 </p>
+                <div class="invest-button">
+                    <a href="#contact" class="button">Investir sur ce projet</a>
+                </div>
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
@@ -163,6 +263,9 @@
                     publier dans la toile forum, rechercher des médecins ou des centres hospitaliers selon <br>
                     des keywords et passer des appels d'urgences.
                 </p>
+                <div class="invest-button">
+                    <a href="#contact" class="button">Investir sur ce projet</a>
+                </div>
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
@@ -172,23 +275,28 @@
         <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-07.webp') }}');">
             <div class="w-1/2 ml-20 text-top">
                 <div class="w-1/2 ml-20 line-container"> <!-- Add line-container class -->
-                    <h3 class=".font-bold text-white">
+                    <h3 class="font-bold text-crm text-white">
                         Le CRM Metamed relie tous les centres hospitaliers et médicaux pour un <br>
                         échange rapide et efficace de l'information scientifique et une optimisation <br>
                         maximale de la gestion de crise ouvrant droit à une meilleure vision sur les <br>
                         statistiques médicales.
                     </h3>
+
                 </div>
+
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
         <div class="bg-cover bg-center h-screen flex items-center" style="background-image: url('{{ asset('assets/images/metamedBG/image-08.webp') }}');">
             <div class="w-1/2 ml-20  line-container"> <!-- Add line-container class -->
-                <p class="text-lg mb-8 text-white">
+                <p class="text-lg  mb-8 text-white">
                     Une gestion efficace des dossiers médicaux sans risque de répétition ou de <br>
                     perte avec une vision directe sur tout l'historique médical du patient et un <br>
                     raccourci vers la discussion du cas.
                 </p>
+                <div class="invest-button">
+                    <a href="#contact" class="button">Investir sur ce projet</a>
+                </div>
             </div>
             <div class="w-1/2 bg-cover bg-center h-full"></div>
         </div>
@@ -199,6 +307,9 @@
             <h2 class="text-4xl font-bold text-center-top text-white">Objectifs Metamed +10ans</h2>
 
         </div>
+
     </div>
+    @include('partials/contact')
+
 </body>
 </html>
