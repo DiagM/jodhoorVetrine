@@ -37,6 +37,9 @@ Route::get('/comingsoon', function () {
 Route::get('/metamed', function () {
     return view('metamed');
 })->name('metamed');
+Route::get('/xi', function () {
+    return view('xi');
+})->name('xi');
 
 Route::post('/video/submit', [VideoController::class, 'submit'])->name('video.submit');
 Route::post('/send-email', [EmailController::class,'sendEmail'])->name('send.email');

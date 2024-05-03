@@ -9,6 +9,12 @@
     <link href="{{asset('assets/css/contact.css')}}" rel="stylesheet">
     <title>Contact</title>
 </head>
+{{-- <style>
+body {
+        background-image: url("{{ asset($backgroundImagePath) }}");
+        /* Other styles for your body */
+    }
+</style> --}}
 <body>
     <div class="contact" id="contact" >
         <div class="container">

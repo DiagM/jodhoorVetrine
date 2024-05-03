@@ -6,19 +6,16 @@ html {
 }
 
 body {
-    background-image: url("../images/metamedBG/image-01.webp"); /* Adjusted path */
     background-size: cover;
     height: 100%; /* Set body height to 100% */
     margin: 0; /* Remove default margin */
 }
 
 
-.contact {
-    margin-top: 100px;
-    height: 720px;
 
+    .contact{
+        margin-top:10px;
     }
-
     .contact h2 {
     color: white;
     font-size: 24px;
@@ -74,32 +71,40 @@ body {
             width: 100%; /* Make the map iframe take up the full width on smaller screens */
             height: 100%; /* Adjust the height as needed for smaller screens */
         }
-        @media screen and (max-width: 360px),
- screen and (min-width: 361px) and (max-width: 380px),
- screen and (min-width: 381px) and (max-width: 768px) {
-    .contact{
-        margin-top: 100px;
-    }
+        @media only screen and (max-width: 900px) {
 
 
-    .contact h2 {
-        font-size: 24px; /* Adjust the font size for smaller screens */
-    }
+            .contact input[type="text"],
+            .contact input[type="email"],
+            .contact textarea {
+            font-size: 20px;
+            height: 30px;
+            width: 100%;
+            background-color: #201938df;
+            color: white;
+            }
+            .contact textarea {
+                height: 100px;
 
-    .contact form {
-        margin-bottom: 20px; /* Add some spacing between the form and the map on smaller screens */
-    }
+                }
+            .contact h2 {
+                font-size: 15px; /* Adjust the font size for smaller screens */
+            }
 
-    .contact .row {
-        flex-direction: column; /* Stack columns on top of each other for smaller screens */
-    }
+            .contact form {
+                margin-bottom: 10px; /* Add some spacing between the form and the map on smaller screens */
+            }
 
-    .contact .col-md-6 {
-        width: 100%; /* Make each column take up the full width on smaller screens */
-    }
+            .contact .row {
+                flex-direction: column; /* Stack columns on top of each other for smaller screens */
+            }
 
-    .contact iframe {
-        width: 100%; /* Make the map iframe take up the full width on smaller screens */
-        height: 300px; /* Adjust the height as needed for smaller screens */
-    }
- }
+            .contact .col-md-6 {
+                width: 100%; /* Make each column take up the full width on smaller screens */
+            }
+
+            .contact iframe {
+                width: 100%; /* Make the map iframe take up the full width on smaller screens */
+                height: 300px; /* Adjust the height as needed for smaller screens */
+            }
+         }

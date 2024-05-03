@@ -17,7 +17,7 @@ class EmailController extends Controller
         'message' => 'required',
     ]);
 
-    Mail::to('recipient@example.com')->send(new ContactFormMail($data));
+    Mail::to('contact@jodhoor.co')->send(new ContactFormMail($data));
 
     return redirect()->back()->with('success', 'Email sent successfully.');
 }

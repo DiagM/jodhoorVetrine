@@ -8,6 +8,7 @@
         body, html {
             margin: 0;
             padding: 0;
+
         }
 
         body {
@@ -40,7 +41,10 @@
         }
 
         .h-screen {
-            height: 100vh;
+            height: 120vh;
+        }
+        .h-screen-contact {
+            height: 90vh;
         }
 
         .items-center {
@@ -167,6 +171,9 @@
         .mb-8 {
             margin-bottom: 0rem;
         }
+        .h-screen-contact {
+            height: 100vh;
+        }
 }
 
 @media only screen and (min-width:600px) and (max-width:900px) {
@@ -192,6 +199,9 @@
         }
         .text-crm{
             font-size: 1rem;
+        }
+        .h-screen-contact {
+            height: 100vh;
         }
 
 }
@@ -307,9 +317,11 @@
             <h2 class="text-4xl font-bold text-center-top text-white">Objectifs Metamed +10ans</h2>
 
         </div>
+        <div class="bg-cover bg-center h-screen-contact " style="background-image: url('{{ asset('assets/images/metamedBG/image-01.webp') }}');">
 
+            @include('partials/contact')
+        </div>
     </div>
-    @include('partials/contact')
 
 </body>
 </html>

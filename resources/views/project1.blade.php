@@ -30,7 +30,7 @@
 
     </head>
 
-    <body>
+    <body style="background-image: url('{{ asset('assets/images/project/projet-bg.webp') }}');background-size: cover;">
 
         <main>
 
@@ -98,7 +98,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('comingsoon') }}">Réalisations</a>
                         </li>
-
+                        @include('partials/language_switcher')
                     </ul>
                 </div>
 
@@ -111,26 +111,25 @@
                 </div>
             </div>
 
-            <section class="section bg-black" style="background-image: url('{{ asset('assets/images/project/projet-bg.webp') }}');background-size: cover;
-            " id="about">
+            <section class="section bg-black"  id="about">
             <div class="container cont_img">
                 <a href="{{ route('metamed') }}" class="box">
                     {{-- <img src="{{asset('assets/images/pexels-daria-obymaha-1684151.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" onclick="replaceContent(this.src);"> --}}
-                    <img src="{{asset('assets/images/project/metamed-display.webp')}}" alt="metamed-display" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;">
+                    <img src="{{asset('assets/images/project/metamed-display.webp')}}" alt="metamed-display" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 70vh;">
                     <span>Metamed</span>
                 </a>
-                <div class="box">
-                    <img src="{{asset('assets/images/project/display-xi.webp')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" >
+                <a href="{{ route('xi') }}" class="box">
+                    <img src="{{asset('assets/images/project/display-xi.webp')}}" alt="Xi display" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 70vh;" >
                     <span>Xi</span>
                 </div>
-                <div class="box">
-                    <img src="{{asset('assets/images/12.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" >
+                {{-- <div class="box">
+                    <img src="{{asset('assets/images/12.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 70vh;" >
                     <span>Hover</span>
                 </div>
                 <div class="box">
-                    <img src="{{asset('assets/images/pexels-quentin-ecrepont-2188882.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 80vh;" onclick="replaceContent(this.src);">
+                    <img src="{{asset('assets/images/pexels-quentin-ecrepont-2188882.jpg')}}" alt="Your Image" class="img-fluid equal-size-image" data-aos="fade-up" data-aos-delay="300" style="max-height: 70vh;" onclick="replaceContent(this.src);">
                     <span>Effect</span>
-                </div>
+                </div> --}}
               </div>
 
             </section>
