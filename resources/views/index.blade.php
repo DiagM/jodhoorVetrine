@@ -163,7 +163,7 @@ background: none; /* Remove background */
 cursor: pointer;
 }
 .large-image-button{
-width: 100px;
+width: 80px;
 }
 
 .image-button img {
@@ -545,38 +545,47 @@ font-size: 50px;
 
         </a>
         </div>
+        @if(app()->getLocale() == 'ar')
+            <div style="direction: rtl" class="brand-plus bp1">
+                <h1>{{ __('BRAND') }}<button class="add-button" onclick="toggleVisibility('bp1', 'bpp1')">+</button></h1>
 
-            <div class="brand-plus bp1">
+            </div>
+        @else
+        <div class="brand-plus bp1">
             <h1>{{ __('BRAND') }} <button class="add-button" onclick="toggleVisibility('bp1', 'bpp1')">+</button></h1>
 
         </div>
+        @endif
         <div class="brand-plus-plus bpp1">
                 <div class="container">
-                    <div class="row">
+                    @if(app()->getLocale() == 'ar')
+                    <div class="row" style="direction: rtl">
+
                         <div class="col-md-auto">
                             <h1>{{ __('BRAND CREATION') }}<button class="add-button plus-button" data-section="brandCreationPlus" onclick="showDetail('brandCreation',this)">+</button>
                                 <button class="add-button minus-button" data-section="brandCreationMinus" onclick="hideDetail(this, 'brandCreation')" style="display: none;">-</button></h1>
                             <div id="brandCreation" class="detail-page" hidden>
 
-                    <p>{{ __('TH1') }} <br>
-                        {{ __('TH2') }}<br>
-                        {{ __('TH3') }}<br>
-                        {{ __('TH4') }}<br>
-                        {{ __('TH5') }}<br>
-                        {{ __('TH6') }}<br>
-                        {{ __('TH7') }}
-                        <button class="image-button" >
-                            <a href="#contact">
-                                <img src="{{asset('assets/images/contact-orange.webp')}}" alt="contact logo">
+                                <p>
+                                    {{ __('TH1') }} <br>
+                                    {{ __('TH2') }}  <br>
+                                    {{ __('TH3') }} <br>
+                                    {{ __('TH4') }} <br>
+                                    {{ __('TH5') }} <br>
+                                    {{ __('TH6') }} <br>
+                                    {{ __('TH7') }} <br>
+                                    <button class="image-button" >
+                                        <a href="#contact">
+                                                <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
+                                        </a>
 
-                            </a>
+                                    </button>
 
-                        </button>
-
-                        <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
 
-                    </p>
+
+                                </p>
                         <ul class="ul" id="brandCreationList"></ul>
 
                   </div>
@@ -588,13 +597,13 @@ font-size: 50px;
                                     {{ __('TH18') }}<br>
                                     {{ __('TH19') }}<br>
                                     {{ __('TH20') }}<br>
-                                    {{ __('TH21') }}
+                                    {{ __('TH21') }}<br>
                                     <button class="image-button">
                                         <a href="#contact">
-                                            <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                            <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
                                         </a>
                                     </button>
-                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                                 </p>
 
@@ -611,10 +620,10 @@ font-size: 50px;
                                     {{ __('TH34') }}  <br>
                                     <button class="image-button">
                                         <a href="#contact">
-                                            <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                            <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
                                         </a>
                                     </button>
-                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                                 </p>
 
@@ -629,13 +638,14 @@ font-size: 50px;
                                     {{ __('TH45') }} <br>
                                     {{ __('TH46') }} <br>
                                     {{ __('TH47') }} <br>
-                                    {{ __('TH48') }}
+                                    {{ __('TH48') }} <br>
                                     <button class="image-button">
                                         <a href="#contact">
-                                            <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
-                                        </a>
+
+                                            <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
+                                         </a>
                                     </button>
-                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 27px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                                 </p>
 
@@ -646,9 +656,109 @@ font-size: 50px;
                             <ul id="otherList"></ul>
                         </div>
                     </div>
+
+                    @else
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <h1>{{ __('BRAND CREATION') }}<button class="add-button plus-button" data-section="brandCreationPlus" onclick="showDetail('brandCreation',this)">+</button>
+                                <button class="add-button minus-button" data-section="brandCreationMinus" onclick="hideDetail(this, 'brandCreation')" style="display: none;">-</button></h1>
+                            <div id="brandCreation" class="detail-page" hidden>
+
+                                <p>{{ __('TH1') }} <br>
+                                    {{ __('TH2') }}<br>
+                                    {{ __('TH3') }}<br>
+                                    {{ __('TH4') }}<br>
+                                    {{ __('TH5') }}<br>
+                                    {{ __('TH6') }}<br>
+                                    {{ __('TH7') }}<br>
+                                    <button class="image-button" >
+                                        <a href="#contact">
+                                                <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                        </a>
+
+                                    </button>
+
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+
+
+                                </p>
+                        <ul class="ul" id="brandCreationList"></ul>
+
+                  </div>
+                            <h1>{{ __('TH16') }}<button class="add-button plus-button" data-section="brandStrategyPlus" onclick="showDetail('brandStrategy',this)">+</button>
+                                <button class="add-button minus-button" data-section="brandStrategyMinus" onclick="hideDetail(this, 'brandStrategy')" style="display: none;">-</button></h1>
+                            <div id="brandStrategy" class="detail-page" hidden>
+                                <p>
+                                    {{ __('TH17') }}<br>
+                                    {{ __('TH18') }}<br>
+                                    {{ __('TH19') }}<br>
+                                    {{ __('TH20') }}<br>
+                                    {{ __('TH21') }}<br>
+                                    <button class="image-button">
+                                        <a href="#contact">
+                                            <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                        </a>
+                                    </button>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                                </p>
+
+                                <ul class="ul" id="brandStrategyList"></ul>
+                              </div>
+                            <h1>{{ __('TH29') }} <button class="add-button plus-button" data-section="brandActivationPlus" onclick="showDetail('brandActivation',this)">+</button>
+                                <button class="add-button minus-button" data-section="brandActivationMinus" onclick="hideDetail(this, 'brandActivation')" style="display: none;">-</button></h1>
+                            <div id="brandActivation" class="detail-page" hidden>
+                                <p>
+                                    {{ __('TH30') }}  <br>
+                                    {{ __('TH31') }}  <br>
+                                    {{ __('TH32') }}  <br>
+                                    {{ __('TH33') }}  <br>
+                                    {{ __('TH34') }}  <br>
+                                    <button class="image-button">
+                                        <a href="#contact">
+                                            <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                        </a>
+                                    </button>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                                </p>
+
+                                <ul class="ul" id="brandActivationList"></ul>
+                              </div>
+                            <h1>{{ __('TH42') }} <button class="add-button plus-button" data-section="brandExperiencePlus" onclick="showDetail('brandExperience',this)">+</button>
+                            <button class="add-button minus-button" data-section="brandExperienceMinus" onclick="hideDetail(this, 'brandExperience')" style="display: none;">-</button></h1>
+                            <div id="brandExperience" class="detail-page" hidden>
+                                <p>
+                                    {{ __('TH43') }}  <br>
+                                    {{ __('TH44') }} <br>
+                                    {{ __('TH45') }} <br>
+                                    {{ __('TH46') }} <br>
+                                    {{ __('TH47') }} <br>
+                                    {{ __('TH48') }} <br>
+                                    <button class="image-button">
+                                        <a href="#contact">
+
+                                            <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                         </a>
+                                    </button>
+                                    <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                                </p>
+
+                                <ul class="ul" id="brandExperienceList"></ul>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <ul id="otherList"></ul>
+                        </div>
+                    </div>
+                    @endif
                 </div>
 
         </div>
+        @if(app()->getLocale() == 'ar')
+    <div style="direction: rtl">
     <div class="brand-plus full-brand bp2">
         <h1>{{ __('TH56') }}<button class="add-button" onclick="toggleVisibility('bp2', 'bpp2')">+</button></h1>
 
@@ -670,10 +780,10 @@ font-size: 50px;
                             {{ __('TH64') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
-                                    <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                    <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
                                 </a>
                             </button>
-                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                         </p>
                 </div>
@@ -684,7 +794,7 @@ font-size: 50px;
                         <li>->{{ __('TH67') }}</li>
                         <li>->{{ __('TH68') }}</li>
                         <li>->{{ __('TH69') }}</li>
-                        <li>->{{ __('TH70') }}</li>
+                        <li>{{ __('TH70') }}</li>
                     </ul>
                 </div>
             </div>
@@ -710,10 +820,10 @@ font-size: 50px;
                             {{ __('TH78') }} <br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
-                                    <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                    <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
                                 </a>
                             </button>
-                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                         </p>
                 </div>
@@ -756,10 +866,10 @@ font-size: 50px;
                             {{ __('TH98') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
-                                    <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                    <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
                                 </a>
                             </button>
-                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                         </p>
                 </div>
@@ -795,10 +905,10 @@ font-size: 50px;
                             {{ __('TH111') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
-                                    <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                    <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
                                 </a>
                             </button>
-                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                         </p>
                 </div>
@@ -838,10 +948,10 @@ font-size: 50px;
                             {{ __('TH128') }}<br>
                             <button class="image-button large-image-button" >
                                 <a href="#contact">
-                                    <img src="{{asset('assets/images/contact-orange.webp')}}" alt="Image Alt Text">
+                                    <img src="{{asset('assets/images/icone dialogue Ar.png')}}" alt="contact logo">
                                 </a>
                             </button>
-                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 35px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
 
                         </p>
                 </div>
@@ -859,6 +969,219 @@ font-size: 50px;
             </div>
         </div>
     </div>
+    </div>
+    @else
+    <div class="brand-plus full-brand bp2">
+        <h1>{{ __('TH56') }}<button class="add-button" onclick="toggleVisibility('bp2', 'bpp2')">+</button></h1>
+
+    </div>
+    <div class="brand-plus-plus bpp2">
+        <div class="container">
+            <div class="row">
+
+                    <h1>{{ __('TH56') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp2', 'bpp2')" >-</button></h1>
+                    <div class="col-md-6">
+                        <p style="color:#302743">
+                            {{ __('TH57') }}<br>
+                            {{ __('TH58') }}<br>
+                            {{ __('TH59') }}<br>
+                            {{ __('TH60') }}<br>
+                            {{ __('TH61') }}<br>
+                            {{ __('TH62') }}<br>
+                            {{ __('TH63') }}<br>
+                            {{ __('TH64') }}<br>
+                            <button class="image-button large-image-button" >
+                                <a href="#contact">
+                                    <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                </a>
+                            </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="ul-full">
+                        <li>->{{ __('TH65') }}</li>
+                        <li>->{{ __('TH66') }}</li>
+                        <li>->{{ __('TH67') }}</li>
+                        <li>->{{ __('TH68') }}</li>
+                        <li>->{{ __('TH69') }}</li>
+                        <li>{{ __('TH70') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-plus right-brand bp3">
+        <h1>{{ __('TH71') }}<button class="add-button" onclick="toggleVisibility('bp3', 'bpp3')">+</button></h1>
+
+    </div>
+    <div class="brand-plus-plus bpp3">
+        <div class="container">
+            <div class="row">
+
+                    <h1>{{ __('TH71') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp3', 'bpp3')" >-</button></h1>
+                    <div class="col-md-6">
+                        <p style="color:#302743">
+                            {{ __('TH72') }}<br>
+                            {{ __('TH73') }}<br>
+                            {{ __('TH74') }} <br>
+                            {{ __('TH75') }} <br>
+                            {{ __('TH76') }}<br>
+                            {{ __('TH77') }}  <br>
+                            {{ __('TH78') }} <br>
+                            <button class="image-button large-image-button" >
+                                <a href="#contact">
+                                    <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                </a>
+                            </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="ul-full">
+                        <li>->{{ __('TH79') }}</li>
+                        <li>->{{ __('TH80') }}</li>
+                        <li>->{{ __('TH81') }}</li>
+                        <li>->{{ __('TH82') }}</li>
+                        <li>->{{ __('TH83') }}</li>
+                        <li>->{{ __('TH84') }}</li>
+                        <li>->{{ __('TH85') }}</li>
+                        <li>->{{ __('TH86') }}</li>
+                        <li>->{{ __('TH87') }}</li>
+                        <li>->{{ __('TH88') }}</li>
+                        <li>->{{ __('TH89') }}</li>
+                        <li>->{{ __('TH90') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-plus full-brand bp4">
+        <h1>{{ __('TH91') }}<button class="add-button" onclick="toggleVisibility('bp4', 'bpp4')">+</button></h1>
+
+    </div>
+    <div class="brand-plus-plus bpp4">
+        <div class="container">
+            <div class="row">
+
+                    <h1 >{{ __('TH91') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp4', 'bpp4')" >-</button></h1>
+                    <div class="col-md-6">
+                        <p style="color:#302743">
+                            {{ __('TH92') }}<br>
+                            {{ __('TH93') }}<br>
+                            {{ __('TH94') }}<br>
+                            {{ __('TH95') }}<br>
+                            {{ __('TH96') }}<br>
+                            {{ __('TH97') }}<br>
+                            {{ __('TH98') }}<br>
+                            <button class="image-button large-image-button" >
+                                <a href="#contact">
+                                    <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                </a>
+                            </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="ul-full">
+                        <li>->{{ __('TH99') }}</li>
+                        <li>->{{ __('TH100') }}</li>
+                        <li>->{{ __('TH101') }}</li>
+                        <li>->{{ __('TH102') }}</li>
+                        <li>->{{ __('TH103') }}</li>
+                        <li>->{{ __('TH104') }}</li>
+                        <li>->{{ __('TH105') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-plus bp5">
+        <h1>{{ __('TH106') }}<button class="add-button" onclick="toggleVisibility('bp5', 'bpp5')">+</button></h1>
+
+    </div>
+    <div class="brand-plus-plus bpp5">
+        <div class="container">
+            <div class="row">
+                <h1>{{ __('TH107') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp5', 'bpp5')" >-</button></h1>
+                <div class="col-md-6">
+
+
+                        <p style="color:#302743">
+                            {{ __('TH108') }}<br>
+                            {{ __('TH109') }}<br>
+                            {{ __('TH110') }}<br>
+                            {{ __('TH111') }}<br>
+                            <button class="image-button large-image-button" >
+                                <a href="#contact">
+                                    <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                </a>
+                            </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="ul-full">
+                        <li>->{{ __('TH112') }}</li>
+                        <li>->{{ __('TH113') }}</li>
+                        <li>->{{ __('TH114') }}</li>
+                        <li>->{{ __('TH115') }}</li>
+                        <li>->{{ __('TH116') }}</li>
+                        <li>->{{ __('TH117') }}</li>
+                        <li>->{{ __('TH118') }}</li>
+                        <li>->{{ __('TH119') }}</li>
+                        <li>->{{ __('TH120') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="brand-plus full-brand bp6">
+        <h1>{{ __('TH121') }}<button class="add-button" onclick="toggleVisibility('bp6', 'bpp6')">+</button></h1>
+
+    </div>
+    <div class="brand-plus-plus bpp6">
+        <div class="container">
+            <div class="row">
+
+                    <h1 >{{ __('TH121') }}<button class="add-button minus-button-full"  onclick="hideBrand('bp6', 'bpp6')" >-</button></h1>
+                    <div class="col-md-6">
+                        <p style="color:#302743">
+                            {{ __('TH122') }}<br>
+                            {{ __('TH123') }}<br>
+                            {{ __('TH124') }}<br>
+                            {{ __('TH125') }}<br>
+                            {{ __('TH126') }}<br> <br>
+                            {{ __('TH127') }}<br>
+                            {{ __('TH128') }}<br>
+                            <button class="image-button large-image-button" >
+                                <a href="#contact">
+                                    <img src="{{asset('assets/images/icone dialogue fr.png')}}" alt="contact logo">
+                                </a>
+                            </button>
+                            <a href="https://www.linkedin.com/company/jodhoor/" target="_blank" style="font-size: 40px;"><i class="bi bi-linkedin" style="color:#201938;"></i></a>
+
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="ul-full">
+                        <li>->{{ __('TH129') }}</li>
+                        <li>->{{ __('TH130') }}</li>
+                        <li>->{{ __('TH131') }}</li>
+                        <li>->{{ __('TH132') }}</li>
+                        <li>->{{ __('TH133') }}</li>
+                        <li>->{{ __('TH134') }}</li>
+                        <li>->{{ __('TH135') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
     <div class="contact" id="contact">
     <div class="container">
 
