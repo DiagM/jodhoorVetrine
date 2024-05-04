@@ -1,5 +1,3 @@
-<!-- language.blade.php -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,6 +45,11 @@
         .dropdown:hover .dropbtn {
             background-color: #ddd;
         }
+
+        /* Highlight current locale */
+        .highlight {
+            background-color: #a6d8f9; /* Light blue color */
+        }
     </style>
 </head>
 <body>
@@ -56,9 +59,7 @@
         <button class="dropbtn">{{ __('English') }}</button>
         <div class="dropdown-content">
             @foreach($available_locales as $locale_name => $available_locale)
-                @if($available_locale !== $current_locale)
-                    <a href="language/{{ $available_locale }}">{{ $locale_name }}</a>
-                @endif
+                <a href="language/{{ $available_locale }}" @if($available_locale === $current_locale) class="highlight" @endif>{{ $locale_name }}</a>
             @endforeach
         </div>
     </div>

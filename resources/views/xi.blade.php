@@ -223,7 +223,7 @@
         }
         .text-4xl-quizz {
             font-size: 0.8rem; /* Increased font size to 3rem */
-            margin-top: 500px
+            margin-top: 800px
         }
         .text-3xl {
             font-size: 0.5rem; /* Increased font size to 3rem */
